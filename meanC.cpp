@@ -11,3 +11,11 @@ double meanC(NumericVector x){
 	}
 	return total / n;
 }
+
+/*** R
+library(microbenchmark)
+x <- runif(1e5)
+microbenchmark(
+mean(x),
+meanC(x)
+)
