@@ -97,5 +97,48 @@ rowSums(x)
 rowSumsC(x)
 
 sourceCpp("/Users/Cody_2/git.repos/learn_cpp/meanC.cpp")
+library(microbenchmark)
+microbenchmark(
+  mean(x),
+  meanC(x)
+)
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/attrib.cpp")
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/mpe.cpp")
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/callWithOne.cpp")
+
+
+mod <- lm(mpg ~ wt, data = mtcars)
+mod
+
+mpe(mod)
+mpe(x)
+
+mod
+str(mod)
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/scalar_missing.cpp")
+str(scalar_missings()) # uhh ohh! type coercion, T, F, NA in R
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/missing_sampler.cpp")
+str(missing_sampler())
+
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/is_naC.cpp")
+is_naC(c(NA, 5.4, 3.2, NA))
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/sum3.cpp")
+
+sum3(c(5, 4, 5))
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/sum4.cpp")
+
+sum3(c(5, 4, 5, 5))
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/findInterval2.cpp")
+
+sourceCpp("/Users/Cody_2/git.repos/learn_cpp/rleC.cpp")
+
+
+
 
 
