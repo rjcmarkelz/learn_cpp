@@ -40,6 +40,15 @@ int main(){
 	// unsigned int : Same size as signed version
 	// long double : Not less then double
 
+	// largest int and overflow example
+	int largestInt = 2147483647;
+	int largestInt2 = 2147483648; // overflow
+	cout << "largest int   " << largestInt << endl;
+	cout << "largest int overflow  " << largestInt2 << endl; // yikes
+
+	// up next is short hand assignment for arithmetic 
+
+
 	// check if run correctly always return a 0
 	return 0; 
 }
