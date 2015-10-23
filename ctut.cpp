@@ -46,8 +46,22 @@ int main(){
 	cout << "largest int   " << largestInt << endl;
 	cout << "largest int overflow  " << largestInt2 << endl; // yikes
 
-	// up next is short hand assignment for arithmetic 
+	// up next is short hand assignment for arithmetic
+	cout << "5 + 2 = " << 5+2 << endl;
+	cout << "5 - 2 = " << 5-2 << endl;
+	cout << "5 * 2 = " << 5*2 << endl;
+	cout << "5 / 2 = " << 5/2 << endl;
+	cout << "5 % 2 = " << 5%2 << endl;
 
+	int five = 5;
+	cout << "5++ = " << five++ << endl;
+	cout << "++5 = " << ++five << endl;
+	cout << "5-- = " << five-- << endl;
+	cout << "--5 = " << --five << endl;
+
+	five += 6; five = five + 6;
+
+	// short lesson, order of operations up next
 
 	// check if run correctly always return a 0
 	return 0; 
