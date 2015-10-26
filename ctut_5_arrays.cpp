@@ -28,5 +28,19 @@ int main(){
 
     cout << "New Value " << myName[0][2] << endl;
 
+    for(int i = 1; i <= 10; i++ ){
+
+    	cout << i << endl;
+    }
+
+    //nested for loop over array, start index at 0
+    for(int j = 0; j < 6; j++){
+    	for(int k = 0; k < 7; k++){
+    		cout << myName[j][k];
+    	}
+
+    	cout << endl;
+    }
+
 	return 0; 
 }
