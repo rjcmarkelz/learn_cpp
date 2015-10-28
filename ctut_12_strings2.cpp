@@ -23,11 +23,21 @@ int main(){
 	string wholeName = yourName.assign(yourName);
 	cout << wholeName << endl;
 
-	string firstName = wholeName.assign(wholeName, 0 , 5);
+	string firstName = wholeName.assign(wholeName, 0 , 5); //substring
 	cout << firstName << endl;
 
-	int lastNameIndex = yourName.find("Markelz", 0);
+	int lastNameIndex = yourName.find("Markelz", 0); //index string search
 	cout << "Index for last name" << lastNameIndex << endl;
+
+	yourName.insert(5, "John "); // insert middle name
+	cout << yourName << endl;
+
+	yourName.erase(5,5); // remove middle name
+	cout << yourName << endl;
+
+	yourName.replace(5,7,"Maximus"); //replace last name
+	cout << yourName << endl;
+
 
 	return 0; 
 }
