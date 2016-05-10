@@ -1,16 +1,15 @@
-/* multiline
-comment */
+/* multiline comment */
 
 // single line comment
 
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 
-#define MYNAME "Cody Markelz" // constant
+// #define MYNAME "Cody Markelz" // constant
 
-int globalVar = 100; // camel case
+// int globalVar = 100; // camel case
 
-main(){
+int main(){
 
     char firstLetter = 'D'; // 256 characters
 
@@ -24,6 +23,7 @@ main(){
 
     printf("\n");
 
-    printf("this will print to screen\n");
+    printf("this will print to screen\n\n");
 
 }
+
